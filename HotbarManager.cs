@@ -5,7 +5,7 @@ namespace ClassicItemWheelMod
 {
 	public class HotbarManager: SunbeamMod
 	{
-		public override string ModIdentifier => "ClassicItemWheelMod";
+		public override string ModIdentifier => "ClassicItemWheelMod-Revamped";
 		public static HotbarManager Instance { get; private set; }
 
 		public HotBarController Controller;
@@ -23,11 +23,13 @@ namespace ClassicItemWheelMod
 			this.CSSAsset = this.FileHelper.ReadFileContent("Assets/style.min.css");
 		}
 
-		/// <summary>
-		/// We can only instantiate the controller after the ClientContext is initialised
-		/// otherwise the WeboverlayRenderer is not available
-		/// </summary>
-		public override void ClientContextInitializeBefore()
+	    protected override bool HarmonyAutoPatch => false;
+
+        /// <summary>
+        /// We can only instantiate the controller after the ClientContext is initialised
+        /// otherwise the WeboverlayRenderer is not available
+        /// </summary>
+        public override void ClientContextInitializeBefore()
 		{
 			this.Controller = new HotBarController();
 		}

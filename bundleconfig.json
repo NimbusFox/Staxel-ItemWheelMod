@@ -16,6 +16,8 @@
     "inputFiles": [
       "Assets/main.js"
     ],
-    "minify": {}
+    "minify": {
+        "enabled": true
+    }
   }
 ]
