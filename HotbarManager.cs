@@ -23,8 +23,6 @@ namespace ClassicItemWheelMod
 			this.CSSAsset = this.FileHelper.ReadFileContent("Assets/style.min.css");
 		}
 
-	    protected override bool HarmonyAutoPatch => false;
-
         /// <summary>
         /// We can only instantiate the controller after the ClientContext is initialised
         /// otherwise the WeboverlayRenderer is not available

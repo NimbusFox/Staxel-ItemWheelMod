@@ -91,7 +91,7 @@ namespace ClassicItemWheelMod {
         private void BindSlots(string arg) {
             Blob blob = BlobAllocator.Blob(true);
             blob.ReadJson(arg);
-            List<BlobEntry> layout = blob.FetchList("layout") ?? new List<BlobEntry>();
+            List<BlobEntry> layout = blob.FetchList("layout");
             this.Layout = new Vector2F[layout.Count];
 
             for (int k = 0; k < layout.Count; k++) {
@@ -99,14 +99,14 @@ namespace ClassicItemWheelMod {
                 this.Layout[k] = new Vector2F((float)entry.GetLong("left"), (float)entry.GetLong("top"));
             }
 
-            List<BlobEntry> layoutOrigins = blob.FetchList("layoutOrigins") ?? new List<BlobEntry>();
+            List<BlobEntry> layoutOrigins = blob.FetchList("layoutOrigins");
             this.LayoutOrigin = new Vector2F[layoutOrigins.Count];
             for (int j = 0; j < layoutOrigins.Count; j++) {
                 Blob entry2 = layoutOrigins[j].Blob();
                 this.LayoutOrigin[j] = new Vector2F((float)entry2.GetLong("left"), (float)entry2.GetLong("top"));
             }
 
-            List<BlobEntry> layoutSizes = blob.FetchList("layoutSizes") ?? new List<BlobEntry>();
+            List<BlobEntry> layoutSizes = blob.FetchList("layoutSizes");
             this.LayoutSizes = new Vector2F[layoutSizes.Count];
             for (int i = 0; i < layoutSizes.Count; i++) {
                 Blob entry3 = layoutSizes[i].Blob();

@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using NimbusFox.FoxCore.Dependencies.Harmony;
 using Plukit.Base;
 using Staxel;
 using Staxel.Draw;

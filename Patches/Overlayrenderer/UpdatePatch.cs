@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using NimbusFox.FoxCore.Dependencies.Harmony;
 using Staxel.Client;
 using Staxel.Logic;
 using Staxel.Rendering;
