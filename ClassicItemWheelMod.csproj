@@ -43,16 +43,16 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="FNA">
-      <HintPath>S:\SteamLibrary\steamapps\common\Staxel\bin\FNA.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Staxel\bin\FNA.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
     <Reference Include="Plukit.Base">
-      <HintPath>S:\SteamLibrary\steamapps\common\Staxel\bin\Plukit.Base.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Staxel\bin\Plukit.Base.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Staxel">
-      <HintPath>S:\SteamLibrary\steamapps\common\Staxel\bin\Staxel.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Staxel\bin\Staxel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
